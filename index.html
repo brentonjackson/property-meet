@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https://unpkg.com; script-src 'self' 'unsafe-inline' https://unpkg.com;"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="./lib/react.js"></script>
+    <script src="./lib/react-dom.js"></script>
+    <!-- Babel -->
+    <script src="./lib/babel.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Property Meet</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- React components -->
+    <script type="text/babel" src="./components/App.jsx"></script>
+    <script type="text/babel" src="./components/Window.jsx"></script>
+    <script type="text/babel" src="./components/HomePage/HomePage.jsx"></script>
+    <script
+      type="text/babel"
+      src="./components/HomePage/AboutSection.jsx"
+    ></script>
+    <script
+      type="text/babel"
+      src="./components/HomePage/UserLogin.jsx"
+    ></script>
+    <script
+      type="text/babel"
+      src="./components/HomePage/UserRegistration.jsx"
+    ></script>
+    <script
+      type="text/babel"
+      src="./components/Dashboard/BuyerDashboard/BuyerDashboard.jsx"
+    ></script>
+    <script
+      type="text/babel"
+      src="./components/Dashboard/BuyerDashboard/Wishlist.jsx"
+    ></script>
+    <script
+      type="text/babel"
+      src="./components/Dashboard/SellerDashboard/SellerDashboard.jsx"
+    ></script>
+    <script
+      type="text/babel"
+      src="./components/Dashboard/Properties.jsx"
+    ></script>
+    <!--  -->
+    <script type="text/babel">
+      ReactDOM.render(<App />, document.querySelector("#root"));
+    </script>
+  </body>
+</html>
