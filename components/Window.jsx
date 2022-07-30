@@ -1,3 +1,12 @@
+/* Window component
+ * holder for tabs and tab's content
+ * functions:
+ *   - keep track of current active tab in window
+ *   - know all the tabs in the window
+ *   - control size and styling of window
+ *   - render window content based on selected tab
+ */
+
 function Window(props) {
   // list of windowTab components
   const tabs = props.children;
