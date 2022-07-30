@@ -1,8 +1,7 @@
 function App() {
   const [currentTab, setCurrentTab] = React.useState("Home");
   let onTabClick = (e) => {
-    console.log("clicked!");
-    console.log(e);
+    console.log(e.target.innerHTML + " clicked!");
     setCurrentTab(e.target.innerHTML);
   };
 
@@ -10,7 +9,12 @@ function App() {
   let loggedIn = true;
 
   return (
-    <Window className="view" currentTab={currentTab} onTabClick={onTabClick}>
+    <Window
+      className="view"
+      editorClass=""
+      currentTab={currentTab}
+      onTabClick={onTabClick}
+    >
       <WindowTab
         show={true}
         onTabClick={onTabClick}

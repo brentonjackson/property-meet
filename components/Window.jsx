@@ -23,7 +23,7 @@ function Window(props) {
         )}
       </div>
       {/* Render tab's content */}
-      <div className="editor">
+      <div className={"editor " + props.editorClass + "editor"}>
         <div className="editor-content">{tabs}</div>
       </div>
     </div>
