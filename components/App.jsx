@@ -72,6 +72,10 @@ function App() {
         tabName="Buy"
         content={BuyerDashboard}
         currentTab={currentTab}
+        tabComponentProps={{
+          currentUser,
+          loggedIn,
+        }}
       />
       <WindowTab
         show={loggedIn}
@@ -79,6 +83,10 @@ function App() {
         tabName="Sell"
         content={SellerDashboard}
         currentTab={currentTab}
+        tabComponentProps={{
+          currentUser,
+          loggedIn,
+        }}
       />
       {/* <HomePage>
           <AboutSection />
