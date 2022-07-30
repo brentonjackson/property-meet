@@ -1,8 +1,8 @@
 function HomePage(props) {
   return (
     <div>
-      Hi, I am a Car!
-      {props.children}
+      Hi, i am in home!
+      {props ? props.children : ""}
     </div>
   );
 }
