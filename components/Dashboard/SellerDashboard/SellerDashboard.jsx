@@ -7,6 +7,7 @@
 
 function SellerDashboard(props) {
   const {
+    users,
     currentUser,
     propertyId,
     setPropertyId,
@@ -18,6 +19,7 @@ function SellerDashboard(props) {
     <div>
       <div>
         <PropertiesList
+          users={users}
           properties={properties}
           currentUser={currentUser}
           currentTab={currentTab}

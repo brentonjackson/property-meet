@@ -10,8 +10,8 @@ function AddPropertyForm(props) {
   const { currentUser, propertyId, setPropertyId, properties, setProperties } =
     props;
   return (
-    <div>
-      <div></div>
+    <div className="property-card">
+      <div className="add-property-form"></div>
     </div>
   );
 }

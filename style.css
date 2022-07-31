@@ -279,3 +279,34 @@ button {
   width: fit-content;
   padding: 10px;
 }
+/********* Property List Styles **********/
+.propertiesList {
+  width: 90%;
+  height: 40vh;
+  padding: 3vh;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 5vh 10px;
+}
+
+/********* Property Card Styles **********/
+.property-card {
+  border-radius: 10px;
+  border: lightgray 5px solid;
+  background-color: lightgray;
+  color: black;
+  width: 225px;
+  height: 90%;
+  padding: 10px;
+  font-size: medium;
+  margin-right: 30px;
+}
+.property-card img {
+  width: 225px;
+  height: 60%;
+}
+.property-card span {
+  font-size: medium;
+}

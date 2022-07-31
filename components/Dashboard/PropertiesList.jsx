@@ -8,6 +8,7 @@
 
 function PropertiesList(props) {
   const {
+    users,
     currentUser,
     propertyId,
     setPropertyId,
@@ -41,6 +42,7 @@ function PropertiesList(props) {
       console.log("propertyCards function: ", properties);
       return (
         <PropertyCard
+          users={users}
           currentUser={currentUser}
           property={property}
           key={property._propertyID}
@@ -57,14 +59,23 @@ function PropertiesList(props) {
     <div className="propertiesList">
       {propertyCards}
       {currentTab === "Sell" ? (
-        <AddPropertyForm
+        <PropertyCard
           currentUser={currentUser}
           propertyId={propertyId}
           setPropertyId={setPropertyId}
           properties={properties}
           setProperties={setProperties}
+          currentTab={currentTab}
+          addProperty={true}
         />
       ) : (
+        // <AddPropertyForm
+        //   currentUser={currentUser}
+        //   propertyId={propertyId}
+        //   setPropertyId={setPropertyId}
+        //   properties={properties}
+        //   setProperties={setProperties}
+        // />
         ""
       )}
     </div>
