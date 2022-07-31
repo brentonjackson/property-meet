@@ -17,13 +17,23 @@ function App() {
       email: "admin@test.com",
       password: "admin",
       isAdmin: true,
+      properties: [0],
+    },
+    {
+      _userID: 1,
+      name: "b",
+      email: "b",
+      password: "b",
+      isAdmin: false,
+      properties: [],
     },
   ];
   // save users state
   const [users, setUsers] = useState(usersArr);
 
   // userId used to assign each user to a different number
-  const [userId, setUserId] = useState(1);
+  const [userId, setUserId] = useState(2);
+
   // save users to local storage
   localStorage.setItem("users", JSON.stringify(users));
 
@@ -33,10 +43,48 @@ function App() {
   //   email: "",
   //   password: "",
   //   isAdmin: false,
+  //   properties: [] // list of property ids belonging to user
 
   const [currentUser, setCurrentUser] = useState({});
   // keep track of whether a user is logged in
   const [loggedIn, setLoggedIn] = useState(false);
+
+  /********************************************************/
+
+  /***************** Properties Functionality ***********************/
+
+  // Properties array
+  let propertiesArr = [
+    {
+      _propertyID: 0,
+      location: "521 Hank Aaron Dr SW",
+      price: "",
+      owner: 0,
+      imgUrl: "",
+    },
+    {
+      _propertyID: 1,
+      location: "2400 Zebulon Road",
+      price: "",
+      owner: null,
+      imgUrl: "",
+    },
+  ];
+
+  // propertyId used to assign each property a different number
+  const [propertyId, setPropertyId] = useState(2);
+
+  // save users state
+  const [properties, setProperties] = useState(propertiesArr);
+
+  // save properties to local storage
+  localStorage.setItem("properties", JSON.stringify(properties));
+
+  // property schema:
+  // _propertyID: 0,
+  // location: "",
+  // price: "",
+  // owner: 0 // owner is owner's _userId number
 
   /********************************************************/
 
@@ -74,7 +122,8 @@ function App() {
         currentTab={currentTab}
         tabComponentProps={{
           currentUser,
-          loggedIn,
+          properties,
+          currentTab,
         }}
       />
       <WindowTab
@@ -85,16 +134,13 @@ function App() {
         currentTab={currentTab}
         tabComponentProps={{
           currentUser,
-          loggedIn,
+          propertyId,
+          setPropertyId,
+          properties,
+          setProperties,
+          currentTab,
         }}
       />
-      {/* <HomePage>
-          <AboutSection />
-          <Window>
-            <UserRegistration />
-            <UserLogin />
-          </Window>
-        </HomePage> */}
     </Window>
   );
 }

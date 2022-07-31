@@ -124,14 +124,7 @@ function UserRegistration(props) {
     );
   };
   return (
-    // <div>
-    //   <h2>Sign Up</h2>
-    //   <p>Please fill in this form to create an account!</p>
-    //   <hr />
-    //   <form onSubmit={onSubmit} action="" name="SignUpForm">
-    //   </form>
-    // </div>
-    <div className="form">
+    <div className="registrationForm">
       <div>
         <h2>User Registration</h2>
       </div>

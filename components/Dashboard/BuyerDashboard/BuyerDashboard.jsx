@@ -7,6 +7,14 @@
  */
 
 function BuyerDashboard(props) {
-  const { currentUser, loggedIn } = props;
-  return <div>hi {currentUser.name} im buyer dashboard</div>;
+  const { currentUser, properties, currentTab } = props;
+  return (
+    <div>
+      <PropertiesList
+        properties={properties}
+        currentUser={currentUser}
+        currentTab={currentTab}
+      />
+    </div>
+  );
 }
