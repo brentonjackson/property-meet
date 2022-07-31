@@ -2,9 +2,9 @@
  * Login form
  * functions:
  *   - Displaying login form ✅
- *   - Validating user login
- *   - Updating current user state
- *   - Check if already logged in (if so, display logout)
+ *   - Validating user login ✅
+ *   - Updating current user state ✅
+ *   - Check if already logged in (if so, display logout) ✅
  */
 
 function UserLogin(props) {

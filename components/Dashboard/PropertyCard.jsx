@@ -1,9 +1,9 @@
 /* PropertyCard component
  * Card of property
  * functions:
- *   - Display passed in property as a card
+ *   - Display passed in property as a card ✅
  *   - Add onclick event that redirects to a more detailed property listing page
- *   - Styling of card
+ *   - Styling of card ✅
  */
 
 function PropertyCard(props) {

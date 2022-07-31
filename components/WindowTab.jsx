@@ -1,8 +1,8 @@
 /* WindowTab component
  * the individual tab of the window
  * functions:
- *   - rendering the active in the window editor
- *   - passing down props to the component it's rendering
+ *   - rendering the active in the window editor ✅
+ *   - passing down props to the component it's rendering ✅
  */
 
 function WindowTab(props) {

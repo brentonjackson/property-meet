@@ -2,7 +2,7 @@
  * Registration form
  * functions:
  *   - Displaying registration form ✅
- *   - Validating form input ❌
+ *   - Validating form input
  *   - Updating user data in localstorage ✅
  *   - Updating users state ✅
  *   - Redirecting to login page once registered ✅

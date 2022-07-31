@@ -1,7 +1,7 @@
 /* BuyerDashboard component
  * Dashboard for selling property
  * functions:
- *   - Lists all user's property
+ *   - Lists all user's property ✅
  *   - Add properties to sell
  */
 

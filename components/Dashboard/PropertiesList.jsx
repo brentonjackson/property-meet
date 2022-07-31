@@ -1,9 +1,8 @@
 /* PropertiesList component
  * Container for propery cards
  * functions:
- *   - Holder of all properties
- *   - filters the properties to be rendered
- *      - wrapped in useEffect to automatically update when state changes
+ *   - Holder of all properties ✅
+ *   - filters the properties to be rendered ✅
  */
 
 function PropertiesList(props) {

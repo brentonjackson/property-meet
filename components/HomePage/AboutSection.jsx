@@ -1,3 +1,9 @@
+/* HomePage component
+ * About section
+ * functions:
+ *   - display content about project and business ✅
+ */
+
 function AboutSection() {
   return (
     <div>

@@ -4,6 +4,7 @@
  *   - Search for properties
  *   - Add properties to wishlist
  *   - Display user's wishlist
+ *   - Display all properties user is able to buy ✅
  */
 
 function BuyerDashboard(props) {

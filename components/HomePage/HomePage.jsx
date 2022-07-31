@@ -1,8 +1,8 @@
 /* HomePage component
  * functions:
- *   - Rendering AboutSection component
- *   - Rendering UserRegistration and UserLogin components in their own subwindow on the page
- *   - passing down user props to login and registration components
+ *   - Rendering AboutSection component ✅
+ *   - Rendering UserRegistration and UserLogin components in their own subwindow on the page ✅
+ *   - passing down user props to login and registration components ✅
  */
 
 function HomePage(props) {
