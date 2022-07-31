@@ -43,8 +43,7 @@ function PropertyCard(props) {
         alt="property picture"
         onError={(e) => {
           e.target.onerror = null;
-          e.target.src =
-            "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+          e.target.src = "./img/stock.jpeg";
         }}
       />
       <h3>{property.location}</h3>
@@ -55,14 +54,11 @@ function PropertyCard(props) {
   ) : (
     <div className="property-card">
       <img
-        src={
-          "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-        }
+        src={"./img/stock.jpeg"}
         alt="property picture"
         onError={(e) => {
           e.target.onerror = null;
-          e.target.src =
-            "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+          e.target.src = "./img/stock.jpeg";
         }}
       />
       <h2>Add Property</h2>
